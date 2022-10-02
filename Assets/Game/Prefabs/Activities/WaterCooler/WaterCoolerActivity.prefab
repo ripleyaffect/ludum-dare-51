@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1650748844495151045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650748844495151047}
+  - component: {fileID: 1650748844495151041}
+  - component: {fileID: 1188320036757166848}
+  - component: {fileID: 1650748844495151040}
+  m_Layer: 0
+  m_Name: WaterCoolerActivity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650748844495151047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650748844495151045}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.23, y: 0, z: 15.759999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1650748844495151041
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650748844495151045}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1188320036757166848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650748844495151045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaef8931aec1e4d0783e55f6b97fc452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activityManager: {fileID: 0}
+  maxTasks: 1
+  cooldownSeconds: 2
+  currentTaskCount: 0
+  sadPrompts:
+  - I won the lotto, but lost my ticket
+  - My team lost the big game
+  - I stubbed my toe this morning
+  - I cracked my phone screen
+  - All my NFTs got stolen...again
+  - My beanie baby collection is worthless now
+  - My boss asked me to come in on Saturday
+  - The latest Elon tweet messed up my whole project
+  - My allergies are killing me
+  - The printer's jammed up and out of ink
+  - My last three meetings could have been emails
+  happyPrompts:
+  - Mercury is finally out of retrograde
+  - I got a great deal on my new sneakers
+  - The bonus from my last sale just landed
+  - This quarter's our best ever
+  - I'm seeing my favorite band tonight
+  - I hit a new personal best at the gym this morning
+  - My favorite show just got renewed
+  - We get a pizza party for hitting our numbers last month
+  - My side project is really taking off
+  - My kid's lemonade stand is raking it in
+  - I had the best bagel for breakfast
+--- !u!114 &1650748844495151040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650748844495151045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7edfb7d66dda14bc3afaf118c68b2c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereCollider: {fileID: 1650748844495151041}
+  activity: {fileID: 1188320036757166848}
